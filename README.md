@@ -1,15 +1,15 @@
 # HelloWorld
 
-这是一个 Python 示例项目，演示了 Python 的基本语法和常用数据结构。
+A Python sample project demonstrating basic Python syntax and common data structures.
 
-## 功能
+## Features
 
-- 基础函数定义
-- 循环和列表操作
-- 字典数据结构
-- 随机数据生成
+- Basic function definitions
+- Loop and list operations
+- Dictionary data structures
+- Random data generation
 
-## 运行
+## Run
 
 ```bash
 python main.py
