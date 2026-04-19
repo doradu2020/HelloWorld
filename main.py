@@ -14,5 +14,24 @@ if __name__ == '__main__':
     print_hi('PyCharm')
     total = sum(range(1, 11))
     print(f'1到10的综合为: {total}')
+    numbers = list(range(1, 11))
+    for num in numbers:
+        print(num)
+
+    import random
+    names = ['张三', '李四', '王五', '赵六', '钱七', '孙八', '周九', '吴十', '郑十一', '王十二']
+    genders = ['男', '女']
+    occupations = ['工程师', '教师', '医生', '律师', '会计', '设计师', '销售', '经理']
+    Persons = []
+    for i in range(10):
+        person = {
+            '姓名': names[i],
+            '性别': random.choice(genders),
+            '年龄': random.randint(18, 60),
+            '职业': random.choice(occupations)
+        }
+        Persons.append(person)
+    for p in Persons:
+        print(f"姓名: {p['姓名']}, 性别: {p['性别']}, 年龄: {p['年龄']}, 职业: {p['职业']}")
 
 # 访问 https://www.jetbrains.com/help/pycharm/ 获取 PyCharm 帮助
