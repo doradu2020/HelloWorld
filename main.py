@@ -13,7 +13,7 @@ def print_hi(name):
 if __name__ == '__main__':
     print_hi('PyCharm')
     total = sum(range(1, 11))
-    print(f'1到10的综合为: {total}')
+    print(f'1到10的总合为: {total}')
     numbers = list(range(1, 11))
     for num in numbers:
         print(num)
@@ -24,14 +24,22 @@ if __name__ == '__main__':
     occupations = ['工程师', '教师', '医生', '律师', '会计', '设计师', '销售', '经理']
     Persons = []
     for i in range(10):
+        age = random.randint(18, 70)
+        if age < 18:
+            age_group = '青年'
+        elif age <= 59:
+            age_group = '中年'
+        else:
+            age_group = '老年'
         person = {
             '姓名': names[i],
             '性别': random.choice(genders),
-            '年龄': random.randint(18, 60),
-            '职业': random.choice(occupations)
+            '年龄': age,
+            '职业': random.choice(occupations),
+            '年龄段': age_group
         }
         Persons.append(person)
     for p in Persons:
-        print(f"姓名: {p['姓名']}, 性别: {p['性别']}, 年龄: {p['年龄']}, 职业: {p['职业']}")
+        print(f"姓名: {p['姓名']}, 性别: {p['性别']}, 年龄: {p['年龄']}, 职业: {p['职业']}, 年龄段: {p['年龄段']}")
 
 # 访问 https://www.jetbrains.com/help/pycharm/ 获取 PyCharm 帮助
